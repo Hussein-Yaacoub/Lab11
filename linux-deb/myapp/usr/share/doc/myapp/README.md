@@ -1,7 +1,7 @@
 # Hello World Application
 
-**Author:** Ali Salman  
-**Email:** aas145@mail.aub.edu  
+**Author:** Hussein Yaacoub  
+**Email:** hmy03@mail.aub.edu  
 **Version:** 1.0  
 **Date:** November 14, 2025
 
@@ -57,7 +57,7 @@ build-msi.bat
 **OR manually:**
 ```cmd
 candle Product.wxs
-light -ext WixUIExtension Product.wixobj -o helloworld_ali_salman.msi
+light -ext WixUIExtension Product.wixobj -o helloworld_hussein_yaacoub.msi
 ```
 
 ### Linux (C Application)
@@ -96,7 +96,7 @@ chmod 755 myapp/usr/local/bin/helloworld
 
 # Build the package
 dpkg-deb --build myapp
-mv myapp.deb helloworld_ali_salman.deb
+mv myapp.deb helloworld_hussein_yaacoub.deb
 ```
 
 ## Running the Application
@@ -126,7 +126,7 @@ The binary is installed to `/usr/local/bin/` which should be in your PATH.
 ### Windows MSI
 
 ```cmd
-msiexec /i helloworld_ali_salman.msi
+msiexec /i helloworld_hussein_yaacoub.msi
 ```
 
 **OR** double-click the MSI file and follow the installer wizard.
@@ -138,7 +138,7 @@ msiexec /i helloworld_ali_salman.msi
 ### Linux DEB
 
 ```bash
-sudo dpkg -i helloworld_ali_salman.deb
+sudo dpkg -i helloworld_hussein_yaacoub.deb
 ```
 
 **To verify installation:**
@@ -164,12 +164,12 @@ Both packages include:
 
 ### Check DEB package contents:
 ```bash
-dpkg-deb -c helloworld_ali_salman.deb
+dpkg-deb -c helloworld_hussein_yaacoub.deb
 ```
 
 ### Check DEB package metadata:
 ```bash
-dpkg-deb -I helloworld_ali_salman.deb
+dpkg-deb -I helloworld_hussein_yaacoub.deb
 ```
 
 ### Check MSI package properties:
@@ -192,4 +192,4 @@ This is an educational project for EECE 435L - Software Engineering Lab.
 ## Contact
 
 For questions or issues, contact:  
-**Ali Salman** - aas145@mail.aub.edu
+**Hussein Yaacoub** - hmy03@mail.aub.edu

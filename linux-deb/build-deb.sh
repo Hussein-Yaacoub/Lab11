@@ -107,11 +107,11 @@ if [ $? -ne 0 ]; then
 fi
 
 # Rename the package with proper naming
-mv myapp.deb helloworld_ali_salman.deb
+mv myapp.deb helloworld_hussein_yaacoub.deb
 if [ $? -ne 0 ]; then
     echo -e "${YELLOW}WARNING: Could not rename package file${NC}"
 else
-    echo -e "${GREEN}Package renamed to: helloworld_ali_salman.deb${NC}"
+    echo -e "${GREEN}Package renamed to: helloworld_hussein_yaacoub.deb${NC}"
 fi
 
 echo ""
@@ -119,7 +119,7 @@ echo "========================================"
 echo "BUILD SUCCESSFUL!"
 echo "========================================"
 echo ""
-echo "DEB package created: helloworld_ali_salman.deb"
+echo "DEB package created: helloworld_hussein_yaacoub.deb"
 echo ""
 echo "Package verification:"
 echo "--------------------"
@@ -127,15 +127,15 @@ echo "--------------------"
 # Show package contents
 echo ""
 echo "Package contents:"
-dpkg-deb -c helloworld_ali_salman.deb 2>/dev/null || dpkg-deb -c myapp.deb
+dpkg-deb -c helloworld_hussein_yaacoub.deb 2>/dev/null || dpkg-deb -c myapp.deb
 echo ""
 
 echo "Package metadata:"
-dpkg-deb -I helloworld_ali_salman.deb 2>/dev/null || dpkg-deb -I myapp.deb
+dpkg-deb -I helloworld_hussein_yaacoub.deb 2>/dev/null || dpkg-deb -I myapp.deb
 echo ""
 
 echo "Next steps:"
-echo "1. Test installation: sudo dpkg -i helloworld_ali_salman.deb"
+echo "1. Test installation: sudo dpkg -i helloworld_hussein_yaacoub.deb"
 echo "2. Verify: dpkg -l | grep myapp"
 echo "3. Run: helloworld"
 echo "4. Take screenshots for submission"

@@ -90,7 +90,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 REM Link to create MSI
 echo Linking to create MSI package...
-light -ext WixUIExtension Product.wixobj -o helloworld_ali_salman.msi
+light -ext WixUIExtension Product.wixobj -o helloworld_hussein_yaacoub.msi
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: MSI creation failed!
     pause
@@ -102,7 +102,7 @@ echo ========================================
 echo BUILD SUCCESSFUL!
 echo ========================================
 echo.
-echo MSI package created: helloworld_ali_salman.msi
+echo MSI package created: helloworld_hussein_yaacoub.msi
 echo.
 echo Next steps:
 echo 1. Test the MSI by installing it

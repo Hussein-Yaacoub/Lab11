@@ -4,7 +4,7 @@
            Name="HelloWorld Application" 
            Language="1033" 
            Version="1.0.0.0" 
-           Manufacturer="Ali Salman" 
+           Manufacturer="Hussein Yaacoub" 
            UpgradeCode="49a84771-ef6b-44c0-aed9-417ee7f7c632">
     
     <Package InstallerVersion="200" 

@@ -85,27 +85,27 @@ cp linux-deb/myapp/DEBIAN/control submission/documentation/
 echo "  ✓ Copied control file"
 
 # Copy packages if they exist
-if [ -f "linux-deb/helloworld_ali_salman.deb" ]; then
-    cp linux-deb/helloworld_ali_salman.deb submission/packages/
+if [ -f "linux-deb/helloworld_hussein_yaacoub.deb" ]; then
+    cp linux-deb/helloworld_hussein_yaacoub.deb submission/packages/
     echo -e "  ${GREEN}✓ Copied DEB package${NC}"
 elif [ -f "linux-deb/myapp.deb" ]; then
-    cp linux-deb/myapp.deb submission/packages/helloworld_ali_salman.deb
+    cp linux-deb/myapp.deb submission/packages/helloworld_hussein_yaacoub.deb
     echo -e "  ${YELLOW}⚠ Copied DEB package (check filename!)${NC}"
 else
     echo -e "  ${YELLOW}⚠ DEB package not found - you need to build it first${NC}"
 fi
 
 # Note about MSI (can't be built on Linux)
-if [ -f "windows-msi/helloworld_ali_salman.msi" ]; then
-    cp windows-msi/helloworld_ali_salman.msi submission/packages/
+if [ -f "windows-msi/helloworld_hussein_yaacoub.msi" ]; then
+    cp windows-msi/helloworld_hussein_yaacoub.msi submission/packages/
     echo -e "  ${GREEN}✓ Copied MSI package${NC}"
 else
     echo -e "  ${YELLOW}⚠ MSI package not found - build it on Windows${NC}"
 fi
 
 # Optional RPM
-if [ -f "linux-rpm/helloworld_ali_salman.rpm" ]; then
-    cp linux-rpm/helloworld_ali_salman.rpm submission/packages/
+if [ -f "linux-rpm/helloworld_hussein_yaacoub.rpm" ]; then
+    cp linux-rpm/helloworld_hussein_yaacoub.rpm submission/packages/
     echo -e "  ${GREEN}✓ Copied RPM package (optional)${NC}"
 fi
 

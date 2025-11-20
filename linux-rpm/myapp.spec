@@ -33,7 +33,7 @@ install -m 644 user_guide.txt %{buildroot}/usr/share/doc/myapp/
 /usr/share/doc/myapp/user_guide.txt
 
 %changelog
-* Thu Nov 14 2025 Ali Salman <aas145@mail.aub.edu> 1.0-1
+* Thu Nov 14 2025 Hussein Yaacoub <hmy03@mail.aub.edu> 1.0-1
 - Initial package release
 - Simple Hello World application
 - Includes documentation and user guide

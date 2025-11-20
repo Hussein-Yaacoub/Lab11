@@ -1,7 +1,7 @@
 # EECE 435L Lab 11 - Software Packaging
 
-**Student:** Ali Salman  
-**Email:** aas145@mail.aub.edu  
+**Student:** Hussein Yaacoub  
+**Email:** hmy03@mail.aub.edu  
 **Course:** EECE 435L - Software Engineering Lab  
 **Date:** November 14, 2025
 
@@ -53,11 +53,11 @@ cd linux-deb
 ./build-deb.sh
 ```
 
-Output: `helloworld_ali_salman.deb`
+Output: `helloworld_hussein_yaacoub.deb`
 
 **Test:**
 ```bash
-sudo dpkg -i helloworld_ali_salman.deb
+sudo dpkg -i helloworld_hussein_yaacoub.deb
 helloworld
 sudo dpkg -r myapp
 ```
@@ -76,11 +76,11 @@ cd windows-msi
 build-msi.bat
 ```
 
-Output: `helloworld_ali_salman.msi`
+Output: `helloworld_hussein_yaacoub.msi`
 
 **Test:**
 ```cmd
-msiexec /i helloworld_ali_salman.msi
+msiexec /i helloworld_hussein_yaacoub.msi
 "C:\Program Files\HelloWorld\helloworld.exe"
 ```
 
@@ -91,12 +91,12 @@ cd linux-rpm
 ./build-rpm.sh
 ```
 
-Output: `helloworld_ali_salman.rpm`
+Output: `helloworld_hussein_yaacoub.rpm`
 
 ## Submission Files
 
-- `helloworld_ali_salman.msi` - Windows installer
-- `helloworld_ali_salman.deb` - Debian package
+- `helloworld_hussein_yaacoub.msi` - Windows installer
+- `helloworld_hussein_yaacoub.deb` - Debian package
 - `source.zip` - All source code
 - `docs/README.md` - Technical documentation
 - `docs/user_guide.txt` - User manual
@@ -109,8 +109,8 @@ Output: `helloworld_ali_salman.rpm`
 
 ```bash
 # Verify DEB package
-dpkg-deb -c helloworld_ali_salman.deb  # List contents
-dpkg-deb -I helloworld_ali_salman.deb  # Show metadata
+dpkg-deb -c helloworld_hussein_yaacoub.deb  # List contents
+dpkg-deb -I helloworld_hussein_yaacoub.deb  # Show metadata
 
 # Check installed DEB
 dpkg -l | grep myapp
@@ -138,5 +138,5 @@ zip -r source.zip windows-msi/ linux-deb/ linux-rpm/ docs/ -x "*.exe" "*.o" "*.d
 
 Both applications should display:
 ```
-Hello, World from Ali_Salman!
+Hello, World from Hussein_Yaacoub!
 ```
