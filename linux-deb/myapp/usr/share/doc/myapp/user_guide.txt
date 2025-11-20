@@ -230,7 +230,7 @@ Solution:
 
 For assistance, questions, or bug reports:
 
-Email: hmy03@mail.aub.edu
+Email: hay23@mail.aub.edu
 Author: Hussein Yaacoub
 Course: EECE 435L - Software Engineering Lab
 Institution: American University of Beirut

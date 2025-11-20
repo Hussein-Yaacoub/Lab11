@@ -1,6 +1,6 @@
 ╔═══════════════════════════════════════════════════════════════╗
 ║         EECE 435L Lab 11 - Quick Reference                    ║
-║         Hussein Yaacoub (hmy03@mail.aub.edu)                  ║
+║         Hussein Yaacoub (hay23@mail.aub.edu)                  ║
 ╚═══════════════════════════════════════════════════════════════╝
 
 ✅ SETUP COMPLETE - All files personalized with your information

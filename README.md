@@ -1,7 +1,7 @@
 # EECE 435L Lab 11 - Software Packaging
 
 **Student:** Hussein Yaacoub  
-**Email:** hmy03@mail.aub.edu  
+**Email:** hay23@mail.aub.edu  
 **Course:** EECE 435L - Software Engineering Lab  
 **Date:** November 14, 2025
 

@@ -1,7 +1,7 @@
 # Hello World Application
 
 **Author:** Hussein Yaacoub  
-**Email:** hmy03@mail.aub.edu  
+**Email:** hay23@mail.aub.edu  
 **Version:** 1.0  
 **Date:** November 14, 2025
 
@@ -192,4 +192,4 @@ This is an educational project for EECE 435L - Software Engineering Lab.
 ## Contact
 
 For questions or issues, contact:  
-**Hussein Yaacoub** - hmy03@mail.aub.edu
+**Hussein Yaacoub** - hay23@mail.aub.edu

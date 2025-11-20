@@ -1,5 +1,5 @@
 EECE 435L Lab 11 - Submission Checklist
-Hussein Yaacoub (hmy03@mail.aub.edu)
+Hussein Yaacoub (hay23@mail.aub.edu)
 ========================================
 
 BEFORE BUILDING:
@@ -49,6 +49,6 @@ TESTING:
 FINAL VERIFICATION:
 ☐ No placeholder text in any source files
 ☐ No "PUT-GUID" in Product.wxs
-☐ Email is hmy03@mail.aub.edu everywhere
+☐ Email is hay23@mail.aub.edu everywhere
 ☐ Package filenames include "hussein_yaacoub"
 ☐ All screenshots are clear and labeled
