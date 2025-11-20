@@ -1,5 +1,5 @@
 EECE 435L Lab 11 - Submission Checklist
-Ali Salman (aas145@mail.aub.edu)
+Hussein Yaacoub (hay23@mail.aub.edu)
 ========================================
 
 BEFORE BUILDING:
@@ -7,8 +7,8 @@ BEFORE BUILDING:
 ☐ Replace all "PUT-GUID" in windows-msi/Product.wxs
 
 PACKAGE FILES:
-☐ helloworld_ali_salman.msi (Windows MSI package)
-☐ helloworld_ali_salman.deb (Debian package)
+☐ helloworld_hussein_yaacoub.msi (Windows MSI package)
+☐ helloworld_hussein_yaacoub.deb (Debian package)
 
 SOURCE CODE:
 ☐ source.zip containing:
@@ -41,14 +41,14 @@ Linux DEB (6):
 
 TESTING:
 ☐ DEB package installs successfully
-☐ DEB application shows: "Hello, World from Ali_Salman!"
+☐ DEB application shows: "Hello, World from Hussein_Yaacoub!"
 ☐ MSI package installs successfully
-☐ MSI application shows: "Hello, World from Ali_Salman!"
+☐ MSI application shows: "Hello, World from Hussein_Yaacoub!"
 ☐ Both packages uninstall cleanly
 
 FINAL VERIFICATION:
 ☐ No placeholder text in any source files
 ☐ No "PUT-GUID" in Product.wxs
-☐ Email is aas145@mail.aub.edu everywhere
-☐ Package filenames include "ali_salman"
+☐ Email is hay23@mail.aub.edu everywhere
+☐ Package filenames include "hussein_yaacoub"
 ☐ All screenshots are clear and labeled

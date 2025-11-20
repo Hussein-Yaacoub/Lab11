@@ -94,8 +94,8 @@ if [ -n "$RPM_FILE" ]; then
     echo ""
     
     # Copy to current directory
-    cp "$RPM_FILE" ./helloworld_ali_salman.rpm
-    echo -e "${GREEN}Copied to: ./helloworld_ali_salman.rpm${NC}"
+    cp "$RPM_FILE" ./helloworld_hussein_yaacoub.rpm
+    echo -e "${GREEN}Copied to: ./helloworld_hussein_yaacoub.rpm${NC}"
     echo ""
     
     # Show package info
@@ -111,7 +111,7 @@ if [ -n "$RPM_FILE" ]; then
 fi
 
 echo "Next steps:"
-echo "1. Test installation: sudo rpm -i helloworld_ali_salman.rpm"
+echo "1. Test installation: sudo rpm -i helloworld_hussein_yaacoub.rpm"
 echo "2. Verify: rpm -q myapp"
 echo "3. Run: helloworld"
 echo "4. Uninstall: sudo rpm -e myapp"

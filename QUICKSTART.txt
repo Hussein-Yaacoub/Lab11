@@ -1,6 +1,6 @@
 ╔═══════════════════════════════════════════════════════════════╗
 ║         EECE 435L Lab 11 - Quick Reference                    ║
-║         Ali Salman (aas145@mail.aub.edu)                      ║
+║         Hussein Yaacoub (hay23@mail.aub.edu)                  ║
 ╚═══════════════════════════════════════════════════════════════╝
 
 ✅ SETUP COMPLETE - All files personalized with your information
@@ -40,26 +40,26 @@
   Linux DEB:
     cd linux-deb
     ./build-deb.sh
-    → Creates: helloworld_ali_salman.deb
+    → Creates: helloworld_hussein_yaacoub.deb
 
   Windows MSI (after replacing GUIDs):
     cd windows-msi
     build-msi.bat
-    → Creates: helloworld_ali_salman.msi
+    → Creates: helloworld_hussein_yaacoub.msi
 
 ═══════════════════════════════════════════════════════════════
 
 ✅ TEST COMMANDS:
 
   DEB:
-    sudo dpkg -i helloworld_ali_salman.deb
+    sudo dpkg -i helloworld_hussein_yaacoub.deb
     helloworld
-    → Should output: "Hello, World from Ali_Salman!"
+    → Should output: "Hello, World from Hussein_Yaacoub!"
 
   MSI:
-    msiexec /i helloworld_ali_salman.msi
+    msiexec /i helloworld_hussein_yaacoub.msi
     "C:\Program Files\HelloWorld\helloworld.exe"
-    → Should output: "Hello, World from Ali_Salman!"
+    → Should output: "Hello, World from Hussein_Yaacoub!"
 
 ═══════════════════════════════════════════════════════════════
 
@@ -87,7 +87,7 @@
 
   ☐ All GUIDs replaced in Product.wxs
   ☐ Both packages build successfully
-  ☐ Both apps show "Hello, World from Ali_Salman!"
+  ☐ Both apps show "Hello, World from Hussein_Yaacoub!"
   ☐ All 11+ screenshots captured
   ☐ source.zip created
 

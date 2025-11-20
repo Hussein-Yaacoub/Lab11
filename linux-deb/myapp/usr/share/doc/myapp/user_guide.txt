@@ -3,7 +3,7 @@
 ===============================================
 
 Version: 1.0
-Author: Ali Salman
+Author: Hussein Yaacoub
 Date: November 14, 2025
 
 ===============================================
@@ -57,7 +57,7 @@ LINUX VERSION:
 WINDOWS (MSI Package):
 ----------------------
 Method 1 - Using Windows Installer:
-  1. Download helloworld_ali_salman.msi
+  1. Download helloworld_hussein_yaacoub.msi
   2. Double-click the MSI file
   3. Follow the installation wizard
   4. Click "Next" through the prompts
@@ -66,7 +66,7 @@ Method 1 - Using Windows Installer:
 Method 2 - Using Command Line:
   1. Open Command Prompt as Administrator
   2. Navigate to the folder containing the MSI
-  3. Run: msiexec /i helloworld_ali_salman.msi
+  3. Run: msiexec /i helloworld_hussein_yaacoub.msi
   4. Follow the installation wizard
 
 The application will be installed to:
@@ -77,12 +77,12 @@ LINUX (DEB Package):
 Method 1 - Using dpkg:
   1. Open Terminal
   2. Navigate to the folder containing the DEB file
-  3. Run: sudo dpkg -i helloworld_ali_salman.deb
+  3. Run: sudo dpkg -i helloworld_hussein_yaacoub.deb
   4. Enter your password when prompted
 
 Method 2 - Using apt:
   1. Open Terminal
-  2. Run: sudo apt install ./helloworld_ali_salman.deb
+  2. Run: sudo apt install ./helloworld_hussein_yaacoub.deb
   3. Enter your password when prompted
 
 The application will be installed to:
@@ -131,7 +131,7 @@ Method 2 - With Full Path:
   3. Press Enter
 
 Expected Output:
-  Hello, World from Ali_Salman!
+  Hello, World from Hussein_Yaacoub!
 
 ===============================================
 5. UNINSTALLATION
@@ -156,7 +156,7 @@ Method 2 - Settings App (Windows 10/11):
 
 Method 3 - Command Line:
   1. Open Command Prompt as Administrator
-  2. Run: msiexec /x helloworld_ali_salman.msi
+  2. Run: msiexec /x helloworld_hussein_yaacoub.msi
 
 LINUX:
 ------
@@ -230,8 +230,8 @@ Solution:
 
 For assistance, questions, or bug reports:
 
-Email: aas145@mail.aub.edu
-Author: Ali Salman
+Email: hay23@mail.aub.edu
+Author: Hussein Yaacoub
 Course: EECE 435L - Software Engineering Lab
 Institution: American University of Beirut
 
