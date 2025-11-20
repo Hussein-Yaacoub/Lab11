@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" 
+           Name="HelloWorld Application" 
+           Language="1033" 
+           Version="1.0.0.0" 
+           Manufacturer="Ali Salman" 
+           UpgradeCode="49a84771-ef6b-44c0-aed9-417ee7f7c632">
+    
+    <Package InstallerVersion="200" 
+             Compressed="yes" 
+             InstallScope="perMachine" 
+             Description="Hello World Application Installer"
+             Comments="Simple Hello World Application" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" 
+             Title="HelloWorld Application" 
+             Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="DocumentationComponents" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="HelloWorld">
+          <Directory Id="DOCFOLDER" Name="Documentation" />
+        </Directory>
+      </Directory>
+      
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="HelloWorld Application"/>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="HelloWorldExecutable" Guid="af4b1697-9459-4a37-ba78-e39b0a13e054">
+        <File Id="HelloWorldEXE" 
+              Source="helloworld.exe" 
+              KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+    
+    <ComponentGroup Id="DocumentationComponents" Directory="DOCFOLDER">
+      <Component Id="ReadmeFile" Guid="b0a89fe0-ad8f-4b37-9f8a-e09cf0ca09f2">
+        <File Id="ReadmeMD" 
+              Source="..\docs\README.md" 
+              KeyPath="yes" />
+      </Component>
+      <Component Id="UserGuideFile" Guid="d026cd0c-12b9-47af-9cec-c82be1f95fe0">
+        <File Id="UserGuideTXT" 
+              Source="..\docs\user_guide.txt" 
+              KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

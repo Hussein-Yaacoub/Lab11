@@ -1,0 +1,253 @@
+===============================================
+    HELLO WORLD APPLICATION - USER GUIDE
+===============================================
+
+Version: 1.0
+Author: Ali Salman
+Date: November 14, 2025
+
+===============================================
+TABLE OF CONTENTS
+===============================================
+
+1. Introduction
+2. System Requirements
+3. Installation
+4. Using the Application
+5. Uninstallation
+6. Troubleshooting
+7. Support Information
+
+===============================================
+1. INTRODUCTION
+===============================================
+
+Welcome to the Hello World Application!
+
+This simple application demonstrates basic software
+packaging and distribution for Windows and Linux
+operating systems. When executed, it displays a
+friendly "Hello World" message.
+
+This application was created as part of EECE 435L
+Software Engineering Lab coursework.
+
+===============================================
+2. SYSTEM REQUIREMENTS
+===============================================
+
+WINDOWS VERSION:
+- Operating System: Windows 7 or later
+- Processor: Any x86/x64 compatible processor
+- Memory: Minimal (< 1 MB)
+- Disk Space: < 5 MB
+- Additional: .NET Framework (pre-installed on most systems)
+
+LINUX VERSION:
+- Operating System: Ubuntu 18.04+ / Debian 10+ or compatible
+- Architecture: amd64 (64-bit)
+- Processor: Any x86_64 compatible processor
+- Memory: Minimal (< 1 MB)
+- Disk Space: < 5 MB
+
+===============================================
+3. INSTALLATION
+===============================================
+
+WINDOWS (MSI Package):
+----------------------
+Method 1 - Using Windows Installer:
+  1. Download helloworld_ali_salman.msi
+  2. Double-click the MSI file
+  3. Follow the installation wizard
+  4. Click "Next" through the prompts
+  5. Click "Finish" to complete installation
+
+Method 2 - Using Command Line:
+  1. Open Command Prompt as Administrator
+  2. Navigate to the folder containing the MSI
+  3. Run: msiexec /i helloworld_ali_salman.msi
+  4. Follow the installation wizard
+
+The application will be installed to:
+  C:\Program Files\HelloWorld\
+
+LINUX (DEB Package):
+--------------------
+Method 1 - Using dpkg:
+  1. Open Terminal
+  2. Navigate to the folder containing the DEB file
+  3. Run: sudo dpkg -i helloworld_ali_salman.deb
+  4. Enter your password when prompted
+
+Method 2 - Using apt:
+  1. Open Terminal
+  2. Run: sudo apt install ./helloworld_ali_salman.deb
+  3. Enter your password when prompted
+
+The application will be installed to:
+  /usr/local/bin/helloworld
+
+Documentation will be installed to:
+  /usr/share/doc/myapp/
+
+===============================================
+4. USING THE APPLICATION
+===============================================
+
+WINDOWS:
+--------
+Method 1 - Using File Explorer:
+  1. Navigate to C:\Program Files\HelloWorld\
+  2. Double-click helloworld.exe
+  3. A console window will appear with the message
+  4. Press Enter to close the application
+
+Method 2 - Using Command Prompt:
+  1. Press Win+R, type "cmd", press Enter
+  2. Type: "C:\Program Files\HelloWorld\helloworld.exe"
+  3. Press Enter
+  4. The message will be displayed
+  5. Press Enter to close
+
+Method 3 - Using Run Dialog:
+  1. Press Win+R
+  2. Type: "C:\Program Files\HelloWorld\helloworld.exe"
+  3. Press Enter
+  4. Press Enter again to close after viewing the message
+
+LINUX:
+------
+Method 1 - Using Terminal:
+  1. Open Terminal (Ctrl+Alt+T)
+  2. Type: helloworld
+  3. Press Enter
+  4. The message will be displayed
+  5. The application exits automatically
+
+Method 2 - With Full Path:
+  1. Open Terminal
+  2. Type: /usr/local/bin/helloworld
+  3. Press Enter
+
+Expected Output:
+  Hello, World from Ali_Salman!
+
+===============================================
+5. UNINSTALLATION
+===============================================
+
+WINDOWS:
+--------
+Method 1 - Control Panel:
+  1. Open Control Panel
+  2. Go to "Programs and Features"
+  3. Find "HelloWorld Application" in the list
+  4. Click "Uninstall"
+  5. Follow the uninstaller prompts
+  6. Click "Finish"
+
+Method 2 - Settings App (Windows 10/11):
+  1. Open Settings (Win+I)
+  2. Go to "Apps" → "Apps & features"
+  3. Search for "HelloWorld"
+  4. Click on it and select "Uninstall"
+  5. Confirm the uninstallation
+
+Method 3 - Command Line:
+  1. Open Command Prompt as Administrator
+  2. Run: msiexec /x helloworld_ali_salman.msi
+
+LINUX:
+------
+Method 1 - Using dpkg:
+  1. Open Terminal
+  2. Run: sudo dpkg -r myapp
+  3. Enter your password when prompted
+
+Method 2 - Using apt:
+  1. Open Terminal
+  2. Run: sudo apt remove myapp
+  3. Enter your password when prompted
+
+To remove configuration files as well:
+  sudo apt purge myapp
+
+Verify uninstallation:
+  dpkg -l | grep myapp
+  (should return nothing if successfully removed)
+
+===============================================
+6. TROUBLESHOOTING
+===============================================
+
+WINDOWS:
+--------
+Problem: "Application failed to start"
+Solution: Ensure you have necessary Visual C++ 
+         redistributables installed. Download from
+         Microsoft's website if needed.
+
+Problem: "Access denied" error
+Solution: Run the application as Administrator
+         (right-click → Run as administrator)
+
+Problem: MSI installation fails
+Solution: 
+  - Ensure you have administrator privileges
+  - Close any antivirus temporarily
+  - Run: msiexec /i filename.msi /l*v install.log
+  - Check install.log for detailed errors
+
+LINUX:
+------
+Problem: "Command not found" after installation
+Solution: 
+  - Check if installed: dpkg -l | grep myapp
+  - Check if in PATH: echo $PATH
+  - Try with full path: /usr/local/bin/helloworld
+
+Problem: "Permission denied" when running
+Solution: 
+  - Check permissions: ls -l /usr/local/bin/helloworld
+  - Should be executable (rwxr-xr-x)
+  - If not: sudo chmod +x /usr/local/bin/helloworld
+
+Problem: DEB installation fails with dependency errors
+Solution:
+  - Run: sudo apt --fix-broken install
+  - Try: sudo dpkg -i --force-all filename.deb
+
+Problem: "Package is in a very bad inconsistent state"
+Solution:
+  - Remove package: sudo dpkg --remove --force-remove-reinstreq myapp
+  - Clean up: sudo apt clean
+  - Reinstall: sudo dpkg -i filename.deb
+
+===============================================
+7. SUPPORT INFORMATION
+===============================================
+
+For assistance, questions, or bug reports:
+
+Email: aas145@mail.aub.edu
+Author: Ali Salman
+Course: EECE 435L - Software Engineering Lab
+Institution: American University of Beirut
+
+Documentation Location:
+  Windows: C:\Program Files\HelloWorld\Documentation\
+  Linux: /usr/share/doc/myapp/
+
+Additional Resources:
+  - README.md: Detailed compilation and build instructions
+  - This guide: User-facing documentation
+
+===============================================
+
+Thank you for using Hello World Application!
+
+This software is provided as-is for educational
+purposes as part of EECE 435L coursework.
+
+===============================================

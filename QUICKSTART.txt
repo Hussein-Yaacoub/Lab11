@@ -1,0 +1,98 @@
+╔═══════════════════════════════════════════════════════════════╗
+║         EECE 435L Lab 11 - Quick Reference                    ║
+║         Ali Salman (aas145@mail.aub.edu)                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+✅ SETUP COMPLETE - All files personalized with your information
+
+═══════════════════════════════════════════════════════════════
+
+📋 PROJECT FILES:
+
+  README.md               - Main documentation (START HERE)
+  CHECKLIST.txt          - Submission requirements
+  prepare-submission.sh  - Auto-create submission package
+  
+  windows-msi/           - Windows MSI package files
+  linux-deb/             - Debian DEB package files
+  linux-rpm/             - RedHat RPM package files (optional)
+  docs/                  - Technical documentation
+
+═══════════════════════════════════════════════════════════════
+
+⚠️  CRITICAL: BEFORE BUILDING MSI
+
+  Edit: windows-msi/Product.wxs
+  
+  Generate 4 unique GUIDs at: https://www.guidgenerator.com/
+  OR run: uuidgen (4 times)
+  
+  Replace in Product.wxs:
+    Line 6:  UpgradeCode="PUT-GUID-HERE"
+    Line 39: Guid="PUT-GUID-1-HERE"
+    Line 47: Guid="PUT-GUID-2-HERE"
+    Line 52: Guid="PUT-GUID-3-HERE"
+
+═══════════════════════════════════════════════════════════════
+
+🚀 BUILD COMMANDS:
+
+  Linux DEB:
+    cd linux-deb
+    ./build-deb.sh
+    → Creates: helloworld_ali_salman.deb
+
+  Windows MSI (after replacing GUIDs):
+    cd windows-msi
+    build-msi.bat
+    → Creates: helloworld_ali_salman.msi
+
+═══════════════════════════════════════════════════════════════
+
+✅ TEST COMMANDS:
+
+  DEB:
+    sudo dpkg -i helloworld_ali_salman.deb
+    helloworld
+    → Should output: "Hello, World from Ali_Salman!"
+
+  MSI:
+    msiexec /i helloworld_ali_salman.msi
+    "C:\Program Files\HelloWorld\helloworld.exe"
+    → Should output: "Hello, World from Ali_Salman!"
+
+═══════════════════════════════════════════════════════════════
+
+📦 SUBMISSION:
+
+  1. Build both packages
+  2. Take 11+ screenshots (see CHECKLIST.txt)
+  3. Run: ./prepare-submission.sh
+  4. Add screenshots to submission/screenshots/
+  5. Submit the submission/ folder
+
+═══════════════════════════════════════════════════════════════
+
+📸 SCREENSHOTS NEEDED (11 minimum):
+
+  Windows (5): WiX config, Control Panel, installation,
+               running app, MSI properties
+  
+  Linux (6):   Build command, package contents, installation,
+               verification, running app, metadata
+
+═══════════════════════════════════════════════════════════════
+
+🔍 VERIFY BEFORE SUBMITTING:
+
+  ☐ All GUIDs replaced in Product.wxs
+  ☐ Both packages build successfully
+  ☐ Both apps show "Hello, World from Ali_Salman!"
+  ☐ All 11+ screenshots captured
+  ☐ source.zip created
+
+═══════════════════════════════════════════════════════════════
+
+Read README.md for complete instructions!
+
+═══════════════════════════════════════════════════════════════

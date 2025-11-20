@@ -1,0 +1,54 @@
+EECE 435L Lab 11 - Submission Checklist
+Ali Salman (aas145@mail.aub.edu)
+========================================
+
+BEFORE BUILDING:
+☐ Generate 4 unique GUIDs
+☐ Replace all "PUT-GUID" in windows-msi/Product.wxs
+
+PACKAGE FILES:
+☐ helloworld_ali_salman.msi (Windows MSI package)
+☐ helloworld_ali_salman.deb (Debian package)
+
+SOURCE CODE:
+☐ source.zip containing:
+  - windows-msi/ (helloworld.cpp, Product.wxs, build-msi.bat)
+  - linux-deb/ (helloworld.c, build-deb.sh, myapp/DEBIAN/control)
+  - linux-rpm/ (optional)
+  - docs/ (README.md, user_guide.txt)
+
+DOCUMENTATION:
+☐ docs/README.md (technical documentation)
+☐ docs/user_guide.txt (user manual)
+☐ linux-deb/myapp/DEBIAN/control (DEB metadata)
+
+SCREENSHOTS (11 minimum):
+
+Windows MSI (5):
+☐ 1. WiX Product.wxs file in editor
+☐ 2. Control Panel showing installed program
+☐ 3. MSI installation wizard
+☐ 4. Application running with output
+☐ 5. MSI file properties/metadata
+
+Linux DEB (6):
+☐ 6. Build command (./build-deb.sh)
+☐ 7. Package contents (dpkg-deb -c)
+☐ 8. Installation (sudo dpkg -i)
+☐ 9. Verification (dpkg -l | grep myapp)
+☐ 10. Application running (helloworld)
+☐ 11. Package metadata (dpkg-deb -I)
+
+TESTING:
+☐ DEB package installs successfully
+☐ DEB application shows: "Hello, World from Ali_Salman!"
+☐ MSI package installs successfully
+☐ MSI application shows: "Hello, World from Ali_Salman!"
+☐ Both packages uninstall cleanly
+
+FINAL VERIFICATION:
+☐ No placeholder text in any source files
+☐ No "PUT-GUID" in Product.wxs
+☐ Email is aas145@mail.aub.edu everywhere
+☐ Package filenames include "ali_salman"
+☐ All screenshots are clear and labeled

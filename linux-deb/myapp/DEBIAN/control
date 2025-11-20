@@ -1,0 +1,9 @@
+Package: myapp
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Ali Salman <aas145@mail.aub.edu>
+Description: A simple Hello World application
+ This package contains a simple Hello World application
+ that demonstrates basic packaging for Debian-based systems.
